@@ -56,6 +56,7 @@ body{
     background: none;
     position: relative;
     min-height: 40px;
+    max-width: 1140px;
 }
 
 .brand {
@@ -130,7 +131,7 @@ body{
 }
 
 .page-title {
-    margin: 0;
+    margin: auto;
     letter-spacing: -1px;
     font-weight: 400;
     line-height: 1.2;
@@ -140,10 +141,12 @@ body{
     font-family: $font-logo;
     font-size: 40px;
     font-style: italic;
+    text-align: center;
+    display: block;
 }
 
 .page-subtitle {
-    margin: 24px 0; 
+    margin: 24px auto; 
     line-height: 80px;
     max-width: 1140px;
     height: 55px;
@@ -154,6 +157,8 @@ body{
     text-transform: uppercase;
     /* Text style for "It’s nice" */
     letter-spacing: -1.88px;
+    text-align: center;
+    display: block;
 }
 
 .center {
@@ -161,6 +166,7 @@ body{
     /*float: right;
     right: 50%;*/
     text-align: center;
+    width: 100%;
   }
   
   .inner-center {
@@ -168,6 +174,7 @@ body{
     /*float: right;
     right: -50%;*/
     position: relative;
+    display: block;
   }
 
 .btn {
@@ -185,6 +192,8 @@ body{
     border-style: solid;
     background-position: 100% 0;
     background-size: 300%;
+    text-transform: uppercase;
+    font-weight: 700;
     
 }
 
