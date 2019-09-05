@@ -15,19 +15,24 @@ $font-paragraph: 'Roboto Slab', serif;
 *, *::before, *::after {
     box-sizing: border-box;
 }
-
+body{
+    margin: 0;
+}
 .container {
     max-width: 1140px;
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     background: transparent;
 }
-
+.container-fluid{
+    padding: 0;
+}
 /* Navigation */
 
 .header {
     padding: 0;
-    background: url("images\Background_Image.png") no-repeat center 95%; 
+    background: url("https://images.pexels.com/photos/373914/pexels-photo-373914.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260") no-repeat center 95%; 
     background-size: cover;
     position: relative;
 }
@@ -70,11 +75,13 @@ $font-paragraph: 'Roboto Slab', serif;
     text-decoration: none;
     font-size: 100%;
     color: $color-yellow;
+    
 }
 
 .navigation {
     margin: 0;
     padding: 10px;
+    justify-content: right;
 }
 
 .navigation ul {
@@ -110,16 +117,16 @@ $font-paragraph: 'Roboto Slab', serif;
 
 /* Splash */
 
-.splash {
+.main-slider {
     color: $color-yellow;
     display: flex;
     min-height: 500px;
     max-width: 1140px;
-}
-
-.splash-inner {
-    margin: auto;    
-    max-width: 70%;
+    position: relative;
+    width: 100%;
+    margin: 50px auto 0;
+    text-align: center;
+    background: none;
 }
 
 .page-title {
@@ -137,7 +144,7 @@ $font-paragraph: 'Roboto Slab', serif;
 
 .page-subtitle {
     margin: 24px 0; 
-
+    line-height: 80px;
     max-width: 1140px;
     height: 55px;
     color: #ffffff;
@@ -148,6 +155,20 @@ $font-paragraph: 'Roboto Slab', serif;
     /* Text style for "It’s nice" */
     letter-spacing: -1.88px;
 }
+
+.center {
+    position:relative;
+    /*float: right;
+    right: 50%;*/
+    text-align: center;
+  }
+  
+  .inner-center {
+    width: 100%;
+    /*float: right;
+    right: -50%;*/
+    position: relative;
+  }
 
 .btn {
     display: inline-block;
